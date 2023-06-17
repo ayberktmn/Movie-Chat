@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="404dp"
+        android:layout_height="518dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gonderBtn"
+        android:layout_width="158dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#EC1909"
+        android:drawableEnd="@drawable/gonder"
+        android:text="Gönder"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView5"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="277dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtodaismi"
+            android:layout_width="311dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Oda "
+            android:textColor="#FF9800"
+            android:textColorLink="#9E1212"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/back" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/aksiyon"
+            app:tint="#FBFBFB" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="218dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="11dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gonderBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/yorumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Yorum Yap"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

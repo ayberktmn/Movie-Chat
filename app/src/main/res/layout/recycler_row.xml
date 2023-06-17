@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#0AA605"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/chatRecyclerTextView"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="10dp"
+            android:text="Test"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.home.pages.YorumFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="403dp"
+        android:layout_height="368dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcyViewHaftaninFilm">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/btnanimasyon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#120707"
+                android:drawableEnd="@drawable/minions"
+                android:drawableTint="#F3EFEF"
+                android:text="Animasyon" />
+
+            <Button
+                android:id="@+id/btnbilim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#E91E63"
+                android:drawableEnd="@drawable/bilimkurgu"
+                android:drawableTint="#FDFCFC"
+                android:text="Bilim Kurgu" />
+
+            <Button
+                android:id="@+id/btnkorku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#9C27B0"
+                android:drawableEnd="@drawable/korku"
+                android:drawableTint="#FFFDFD"
+                android:text="Korku " />
+
+            <Button
+                android:id="@+id/btnaksiyon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#F44336"
+                android:drawableEnd="@drawable/aksiyon"
+                android:drawableTint="#F8F5F5"
+                android:text="Aksiyon " />
+
+            <Button
+                android:id="@+id/btnkomedi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#3F51B5"
+                android:drawableEnd="@drawable/komedi"
+                android:drawableTint="#FBFBFB"
+                android:text="Komedi" />
+
+            <Button
+                android:id="@+id/btnbelgesel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#2196F3"
+                android:drawableEnd="@drawable/belgesel"
+                android:drawableTint="#FFFFFF"
+                android:text="Belgesel" />
+
+            <Button
+                android:id="@+id/btndrama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#FFC107"
+                android:drawableEnd="@drawable/drama"
+                android:drawableTint="#FAF7F7"
+                android:text="Drama" />
+
+            <Button
+                android:id="@+id/btnfantezi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#4CAF50"
+                android:drawableEnd="@drawable/fantezi"
+                android:drawableTint="#FFFFFF"
+                android:minHeight="48dp"
+                android:text="Fantezi" />
+
+            <Button
+                android:id="@+id/btnromantik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#FF5722"
+                android:drawableEnd="@drawable/romantik"
+                android:drawableTint="#FAFAFA"
+                android:minHeight="48dp"
+                android:text="Romantik"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/odaisimtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyViewHaftaninFilm"
+        android:layout_width="408dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="384dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#050303"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/rcyViewHaftaninFilm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Haftanın Enleri"
+            android:textColor="#F40808"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

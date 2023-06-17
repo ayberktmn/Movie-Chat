@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217711505276",
+    "project_id": "moviechat-489a1",
+    "storage_bucket": "moviechat-489a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217711505276:android:be9b68a6a680388e957ef9",
+        "android_client_info": {
+          "package_name": "com.ayberk.filmyorum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217711505276-fd5ore3hckktfh2k33lls8ptqp466km8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1DYuWStiIJUIJkZDHpELLMYLLQ3ZkwJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217711505276-fd5ore3hckktfh2k33lls8ptqp466km8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

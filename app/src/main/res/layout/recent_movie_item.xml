@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="342px"
+        android:layout_height="513px"
+        android:layout_marginRight="8dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/posterView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/txtGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="deneme,deneme,deneme"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="2022-01-01" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_baseline_star_24" />
+
+            <TextView
+                android:id="@+id/txtYorumAvarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0/10"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/black"
+                android:progressTint="#FFCC01"
+                android:rating="3"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPuanlama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0/5"
+                android:textSize="16sp">
+
+
+            </TextView>
+
+            <Button
+                android:id="@+id/buttonoy"
+                android:layout_width="63dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/black"
+                android:text="oy ver"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imgFavorite"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imgFavoriYes"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/hearttt" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnYorum"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#AE2020"
+            android:drawableEnd="@drawable/message"
+            android:text="Yorum yap"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

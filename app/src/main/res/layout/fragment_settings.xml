@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="59dp"
+    tools:layout_editor_absoluteY="118dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="94dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageViewGoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ayarlarkullanici" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="328dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="60dp"
+        android:hint="Şifre"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
+        app:helperText="Zorunlu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextsifre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:maxLength="21"
+            android:minHeight="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="367dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewWomen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/woman" />
+
+        <ImageView
+            android:id="@+id/imageViewWomen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/womannn2" />
+
+        <ImageView
+            android:id="@+id/imageViewWomen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user2" />
+
+        <ImageView
+            android:id="@+id/imageViewWomen4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/woman2" />
+
+        <ImageView
+            android:id="@+id/imageViewMan1"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/userrr" />
+
+        <ImageView
+            android:id="@+id/imageViewMan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/man" />
+
+        <ImageView
+            android:id="@+id/imageViewMan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gamer" />
+
+        <ImageView
+            android:id="@+id/imageViewMan4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mann" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="203dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/txtAvatarNick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Nickname"
+                android:textColor="#A10909"
+                android:textSize="18sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="85dp"
+        android:drawableEnd="@drawable/exchange"
+        android:text="Değiştir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textkullanici"
+        android:layout_width="334dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:hint="Güncel Şifre"
+        app:counterMaxLength="20"
+        app:helperText="Zorunlu"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:startIconDrawable="@drawable/lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextKullanici"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:inputType="textPassword"
+            android:minHeight="50dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

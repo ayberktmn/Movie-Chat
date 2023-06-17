@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/controlButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="848dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <RelativeLayout
+            android:id="@+id/prevButton"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/nxtButton"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:background="@drawable/next"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp" />
+    </LinearLayout>
+</FrameLayout>

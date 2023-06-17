@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ayberk.filmyorum.ui.fragments.home.pages.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_yorumFragment"
+            app:destination="@id/yorumFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriFragment"
+            app:destination="@id/favoriFragment" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ayberk.filmyorum.ui.fragments.home.pages.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.ayberk.filmyorum.ui.fragments.home.pages.FavoriteFragment"
+        android:label="FavoriteFragment" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+             />
+        <action
+            android:id="@+id/action_favoriteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <argument
+            android:name="avatar"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_yorumFragment"
+            app:destination="@id/yorumFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/yorumFragment"
+        android:name="com.ayberk.filmyorum.ui.fragments.home.pages.YorumFragment"
+        android:label="fragment_yorum2"
+        tools:layout="@layout/fragment_yorum" >
+        <action
+            android:id="@+id/action_yorumFragment_to_yorumodaFragment"
+            app:destination="@id/yorumodaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yorumodaFragment"
+        android:name="com.ayberk.filmyorum.ui.fragments.home.pages.yorumodaFragment"
+        android:label="fragment_yorumoda"
+        tools:layout="@layout/fragment_yorumoda" >
+        <action
+            android:id="@+id/action_yorumodaFragment_to_yorumFragment"
+            app:destination="@id/yorumFragment" />
+        <argument
+            android:name="odaisim"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.ayberk.filmyorum.MainActivity"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ayberk.filmyorum.ui.fragments.home.pages.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument android:name="movieId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriFragment"
+        android:name="com.ayberk.filmyorum.ui.fragments.home.pages.FavoriFragment"
+        android:label="fragment_favori"
+        tools:layout="@layout/fragment_favori" />
+</navigation>

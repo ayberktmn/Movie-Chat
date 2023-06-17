@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnkayit"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="104dp"
+        android:onClick="kayit"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btngiris"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <Button
+        android:id="@+id/btngiris"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="giris"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="378dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="16dp"
+        android:hint="E-mail"
+        app:counterEnabled="true"
+        app:helperText="Zorunlu"
+        app:helperTextTextColor="#E30707"
+        app:layout_constraintBottom_toTopOf="@+id/Textinput_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/person">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextemail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLength="21"
+            android:minHeight="48dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Textinput_1"
+        android:layout_width="378dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="56dp"
+        android:hint="Şifre"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
+        app:helperText="Zorunlu"
+        app:helperTextTextColor="#E30707"
+        app:layout_constraintBottom_toTopOf="@+id/btngiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextsifre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:maxLength="21"
+            android:minHeight="48dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="113dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="190dp"
+            android:layout_height="170dp"
+            android:background="@color/black"
+            android:src="@drawable/girisgif"
+
+            tools:ignore="MissingClass" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
